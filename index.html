@@ -4,8 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apple</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="icon" type="icon/apple_favicon" href="./icons/apple_favicon.png">
+    <style>
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+    
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+    
+        .animate-scroll {
+            animation: scroll 25s linear infinite;
+        }
+    
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    
+    <section>
+        <!-- header -->
+        <header class="bg-[#1D1D1F] h-12 fixed top-0 left-0 right-0 overview-scroll z-50   w-full">
+            <nav class=" flex justify-between h-full  max-w-[1024px] w-full mx-auto px-4">
+                <div class="flex items-center ">
+                    <img class="w-5 h-5 object-contain " src="./icons/apple_logo.png" alt="">
+                </div>
+        
+                <div class="hidden lg:flex text-sm text-gray-200 [&_a:hover]:text-white items-center gap-8">
+                    <a href="#Store">Store</a>
+                    <a href="#Mac">Mac</a>
+                    <a href="#iPad">iPad</a>
+                    <a href="#iPhone">iPhone</a>
+                    <a href="#Watch">Watch</a>
+                    <a href="#Vision">Vision</a>
+                    <a href="#AirPods">AirPods</a>
+                    <a href="#TV&Home">TV & Home</a>
+                    <a href="#Entertainment">Entertainment</a>
+                    <a href="#Accessories">Accessories</a>
+                    <a href="#Support">Support</a>
+                </div>
+        
+                <div class="flex items-center gap-5">
+                    <div class="flex items-center gap-5">
+                        <img class="w-4.5 h-5 object-contain" src="./icons/search-icon.png" alt="">
+                        <a href="#">
+                            <img class="w-5 h-5 object-contain" src="./icons/cart.png" alt="">
+                        </a>
+                    </div>
+        
+                    <div class="flex items-center lg:hidden">
+                        <img class="w-6 h-6 object-contain" src="./icons/menu_black.png" alt="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+    </section>
 </body>
 </html>
